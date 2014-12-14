@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+	<head>		
+		<title> Mystery Box Registration </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+		function thanks(){
+		alert("Thanks for Signing up! We hope you enjoy the great products you get!");
+		window.location ="finished.html";
+		}
+		
+		</script>
+		<script src="jQuery.js"></script>
+	</head>
+	<body>
+	<div id="center">
+		<header>
+		<a id="personal">
+		<strong><h1>Mystery box Registration</h1></strong></a>
+		</header>
+		<form method="post"    action="showform.php">
+		
+		
+		<fieldset>
+		<h2 class="account">Account:</h2>
+ 
+	
+		<label for="first_name">First Name:</label><input id="first_name" name="first_name" type="text" class="large" /><br/>
+	 
+	
+		<label for="last_name">Last Name:</label><input id="last_name" name="last_name" type="text" class="large" /><br/>
+	 
+	
+		<label for="email">Email:</label><input id="email" name="email" type="text" class="large" /><br/>
+	 
+	
+		<label for="password">Password:</label><input id="password" name="password" type="text" class="large" /><br/>
+	 
+	
+		<label for="re_enter_password">Re enter password:</label><input id="re_enter_password" name="re_enter_password" type="text" class="large" /><br/>
+	 
+		
+		<label for="choose_a_user_name">Choose a user name:</label><input id="choose_a_user_name" name="choose_a_user_name" type="choose_a_user_name" /><br/>
+		
+		</fieldset>
+
+		<fieldset>
+			<h2 class="address">Address:</h2>
+ 
+		
+			<label for="street_address">Street Address:</label><input id="street_address" name="street_address" type="text" class="large" /><br/>
+		 
+		
+			<label for="city">City:</label><input id="city" name="city" type="text" class="large" /><br/>
+		 
+	
+		<div>County:
+		<select>
+				<option value="Antrim">Antrim</option>
+				<option value="Armagh">Armagh</option>
+				<option value="Carlow">Carlow</option>
+				<option value="Cavan">Cavan</option>
+				<option value="Clare">Clare</option>
+				<option value="Cork">Cork</option>
+				<option value="Derry">Derry</option>
+				<option value="Donegal">Donegal</option>
+				<option value="Down">Down</option>
+				<option value="Dublin">Dublin</option>
+				<option value="Fermanagh">Fermanagh</option>
+				<option value="Galway">Galway</option>
+				<option value="Kerry">Kerry</option>
+				<option value="Kildare">Kildare</option>
+				<option value="Kilkenny">Kilkenny</option>
+				<option value="Laois">Laois</option>
+				<option value="Leitrim">Leitrim</option>
+				<option value="Longford">Longford</option>
+				<option value="Louth">Louth</option>
+				<option value="Mayo">Mayo</option>
+				<option value="Meath">Meath</option>
+				<option value="Monaghan">Monaghan</option>
+				<option value="Offaly">Offaly</option>
+				<option value="Roscommon">Roscommon</option>
+				<option value="Sligo">Sligo</option>
+				<option value="Tipperary">Tipperary</option>
+				<option value="Tyrone">Tyrone</option>
+				<option value="Waterford">Waterford</option>
+				<option value="Westmeath">Westmeath</option>
+				<option value="Wexford">Wexford</option>
+				<option value="Wicklow">Wicklow</option>
+			</select></div>
+			</fieldset>
+			<fieldset>
+						
+			<h2 class="address">Public Profile:</h2>
+					
+			<label for="screen_name">Screen name:</label><input id="screen_name" name="screen_name" type="text" class="large" /><br/>
+			
+			<label for="dob">Date of Birth:</label><input type="date" id="Date" name="Calender"  /><br/>
+	 
+			<label for="web">Web:</label><input id="web" name="web" type="text" class="large" /><br/>
+	 
+			<label for="bio">Bio:</label><input id="bio" name="bio" type="text" class="large" /><br/>
+	 
+	
+			<div>Check your gender:</div>
+			<input type="radio" name="gender" value="male" /> Male
+			<input type="radio" name="gender" value="female" />Female<br/>
+	 	
+				
+			</fieldset>
+			<fieldset>
+			<h2 class="account">Account:</h2>
+
+
+			<div>
+			<input type="checkbox"  />It is okay to email me with messages from other users. <br/>
+			<input type="checkbox" />It is okay to email me with occasional promotion about our other products.
+			</div>
+			</fieldset>
+
+
+			<fieldset>
+				Where did you find out about us?
+				<select>
+				<optgroup label="Social Media">
+				<option value="Facebook">Facebook</option>
+				<option value="Twitter">Twitter</option>
+				<option value="Instagram">Instagram</option>
+				</optgroup>
+				<optgroup label="Other">
+				<option value="Newspaper">Newspaper</option>
+				<option value="Magazine">Magazine</option>
+				<option value="A friend">Friend</option>
+				</optgroup>
+				</select>
+				<input type="submit" class="create_profile" value="Create Account" onclick="thanks()"/>
+				</fieldset>	
+				</form>
+	
+	
+	
+			<fieldset>
+			
+			<h2 class="billing information">Billing Information:</h2>
+			
+			<div>Creditcard Type:
+			<select>
+				<option value="Visa">Visa</option>
+				<option value="Mastercard">Mastercard</option>
+				<option value="Visadebit">Visadebit</option>
+				<option value="Discover">Discover</option>
+				<option value="American Express">American Express</option>
+				<option value="Mastercard debit">Mastercard debit</option>
+			</select></div>
+			
+			<label for="creditcard_number">Creditcard Number:</label><input id="creditcard_number" name="creditcard_number" type="text" class="large" /></br>
+			
+			<label for="valid_from">Valid From:<input type="month" name="bdaymonth"></br>
+			
+			<label for="expired_end">Expired End:<input type="month"></br>
+			
+			<label for="security_number">Security Number:<input type="text" class="large"></br>
+
+			
+			</fieldset>
+			
+			<fieldset>
+			
+			<h2 class="Type of deal">Which subscription would you like:</h2>
+			<input type="radio" name="subtype" value="3month">3 Month Deal<br>
+			<input type="radio" name="subtype" value="12month">12 Month Deal<br>
+			<p> To read about the deals click the home button </p>
+			<p> <a href="homepage.html"><img src="homebutton.png">
+			
+			
+			</fieldset>
+			
+			
+			
+			
+			</div>
+		
+	
+	
+	<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+            $("body").fadeIn(2000);
+    });
+</script>
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+</html>

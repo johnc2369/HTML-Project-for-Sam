@@ -1,0 +1,12 @@
+body
+{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-image: url("white.jpg");
+}
+
+#center
+{
+margin-left: auto;
+margin-right: auto
+}
+
